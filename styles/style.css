@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #ccc;
+}
+
+
+
+/* BOOT CSS*/
+
+.center{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+
+.flex{display: flex;}
+
+/* Centralizar na horizontal e vertical*/
+.align-flex-center{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* permitir colocar conteudo embaixo do conteudo acima*/
+.align-flex-end{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+/* FIM BOOT CSS*/
+
+header{
+    background-color: black;
+    padding: 10px 0;
+    
+}
+
+.logo img{
+    width: 200px;
+    max-height: 60px;
+    
+}
+
+.buscar-produto{
+    width: 70%;
+    display: flex;
+    
+}
+
+.buscar-produto form{
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.buscar-produto input[type=text]{
+    width: calc(100% - 40px);
+    height: 40px;
+    font-size: 100%;
+    
+}
+
+.buscar-produto button{
+    width: 7%;
+    background-color: #febd68;
+    border: 0;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.lista-desejo{
+    padding: 1% 1%;
+    border: none;
+    white-space: nowrap;
+}
+
+
+.lista-desejo button{
+    /*padding: 20% 25%;*/
+    font-size: 100%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    background-color: inherit;
+    border-style: none;
+    color: whitesmoke;
+    
+}
+.logar{
+    padding: 1% 1%;
+    border: none;
+    white-space: nowrap;
+}
+
+
+.logar button{
+    /*padding: 20% 25%;*/
+    font-size: 100%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    background-color: inherit;
+    border-style: none;
+    color: whitesmoke;
+    
+}
+
+.logar button:hover{
+    color: white;
+   
+}
+
+.carrinho-pg1{
+    padding: 1% 1%;
+    font-size: 100%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    background-color: inherit;
+    border-style: none;
+    color: whitesmoke;
+    
+}
+
+/*---------------------- Section indice -------------------*/
+
+.indice{
+    /*min-height: 40px;*/
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 1% 1%;
+    text-align: center;
+}
+
+
+.indice button{    
+    color: 	rgb(115, 115, 115);
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    width: 10%;
+    margin: 0 25px;
+    display: inline-block;
+}
+
+.indice button:hover{
+    color: black;
+}
+
+/* -------------------- Section vitrine ------------------ */
+
+.vitrine{
+    min-height: 600px;
+    width: 100%;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+    background-image: url('../imagens/código/Background-pg1.jpg');
+    padding-top: 0.5%;
+    
+}
+
+
+.vitrine img{
+    width: 100%;
+    
+}
+
+.produto-vitrine{
+    margin-top: 1%;
+   /* position: fixed;*/
+    width: 28%;
+    background-color: rgba(140, 140, 140, 0.7);
+    padding: 0.5% 0.5%;
+    /*max-height: 500px;*/
+}
+
+
+.produto-vitrine h3{
+    font-size: 20px;
+    
+}
+
+.produto-vitrine p{
+    text-decoration: line-through;
+    
+}
+
+/* -------------------- Section vitrine ------------------ */
