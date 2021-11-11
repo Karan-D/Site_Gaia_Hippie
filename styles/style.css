@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ccc;
+    background-color: whitesmoke;
 }
 
 
@@ -14,7 +14,7 @@ body{
 /* BOOT CSS*/
 
 .center{
-    width: 1280px;
+    max-width: 1680px;
     margin: 0 auto;
     padding: 0 2%;
     
@@ -75,7 +75,6 @@ header{
     border: 0;
     height: 100%;
     cursor: pointer;
-
 }
 
 .lista-desejo{
@@ -94,8 +93,12 @@ header{
     background-color: inherit;
     border-style: none;
     color: whitesmoke;
-    
 }
+
+.lista-desejo button:hover{
+    color: gray;
+}
+
 .logar{
     padding: 1% 1%;
     border: none;
@@ -103,21 +106,21 @@ header{
 }
 
 
-.logar button{
-    /*padding: 20% 25%;*/
+.logar a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+   /*padding: 20% 25%;*/
     font-size: 100%;
     display: inline-block;
     cursor: pointer;
     text-align: center;
     background-color: inherit;
     border-style: none;
-    color: whitesmoke;
-    
+    color: whitesmoke;  
 }
 
-.logar button:hover{
-    color: white;
-   
+.logar a:hover{
+    color: gray;
 }
 
 .carrinho-pg1{
@@ -129,7 +132,10 @@ header{
     background-color: inherit;
     border-style: none;
     color: whitesmoke;
-    
+}
+
+.carrinho-pg1:hover{
+    color: gray;
 }
 
 /*---------------------- Section indice -------------------*/
@@ -140,6 +146,8 @@ header{
     background-color: whitesmoke;
     padding: 1% 1%;
     text-align: center;
+    border-bottom: 2px solid black;
+    
 }
 
 
@@ -152,6 +160,7 @@ header{
     width: 10%;
     margin: 0 25px;
     display: inline-block;
+    
 }
 
 .indice button:hover{
@@ -163,7 +172,7 @@ header{
 .vitrine{
     min-height: 600px;
     width: 100%;
-    background-color: grey;
+    /*background-color:  	#FFFFF0;*/
     background-position: center;
     background-size: cover;
     display: flex;
@@ -172,35 +181,96 @@ header{
     justify-content: space-around;
     position: relative;
     top: 0;
-    background-image: url('../imagens/código/Background-pg1.jpg');
+    /*background-image: url('../imagens/código/Background-pg1.jpg');*/
+    background-image: linear-gradient(-180deg, #FFF8DC, #F5F5DC);
     padding-top: 0.5%;
     
 }
 
 
-.vitrine img{
-    width: 100%;
-    
+.divisao-vitrine-1{
+    width: 28%;
+    background-color: transparent;
+    height: 100%;
+    padding-bottom: 1%; 
+    /*flex-basis: content; /*permite a responsividade*/
+}
+
+.divisao-vitrine-2{
+    width: 28%;
+    background-color: transparent;
+    height: 100%;
+    padding-bottom: 1%;
+    /*flex-basis: content; /*permite a responsividade*/
+
+}
+
+.divisao-vitrine-3{
+    width: 28%;
+    background-color: trans;
+    height: 100%;
+    padding-bottom: 1%;
+    /*flex-basis: content; /*permite a responsividade*/
+
 }
 
 .produto-vitrine{
     margin-top: 1%;
    /* position: fixed;*/
-    width: 28%;
-    background-color: rgba(140, 140, 140, 0.7);
+    width: 100%;
+    background-color: #FFFFF0;
     padding: 0.5% 0.5%;
-    /*max-height: 500px;*/
+    height: 350px;
+    position: relative;
+    display:flex;
+}
+
+.vitrine img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1% 1%;
+    object-fit: cover;
+    transition: opacity 800ms;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.vitrine img.selected-1{
+    opacity: 1;
 }
 
 
-.produto-vitrine h3{
-    font-size: 20px;
+.vitrine img.selected-2{
+    opacity: 1;
+}
+
+.vitrine img.selected-3{
+    opacity: 1;
+}
+
+.preco{
+    width: 100%;
+    height: 26%;
+    text-align: center;
+       
+}
+
+.preco h3{
+    font-size: 22px;
+    padding-top: 2%;
     
 }
 
-.produto-vitrine p{
+.preco p{
     text-decoration: line-through;
+    padding-top: 2%;
     
 }
 
 /* -------------------- Section vitrine ------------------ */
+
+    
